@@ -73,9 +73,9 @@ class AssertThrowableTest extends TestCase
 		AssertException::assertThrowable($test, null, 340, 'Lorem ipsum');
 	}
 
-	public function testReturn(): void
+	public function testReturnTrue(): void
 	{
-		$expectedException = new Exception();
+		$expectedException = true;
 		$actualException = AssertException::assertThrowable(function () use ($expectedException): void {
 			throw $expectedException;
 		});
