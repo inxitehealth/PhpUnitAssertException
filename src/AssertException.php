@@ -24,7 +24,7 @@ trait AssertException
 		?string $expectedThrowableClass = Throwable::class,
 		$expectedCode = null,
 		?string $expectedMessage = null
-	): Throwable
+	)
 	{
 		$expectedThrowableClass = self::fixThrowableClass($expectedThrowableClass, Throwable::class);
 
@@ -34,7 +34,7 @@ trait AssertException
 			self::checkThrowableInstanceOf($throwable, $expectedThrowableClass, self::resolveThrowableCaption(Throwable::class));
 			self::checkThrowableCode($throwable, $expectedCode);
 			self::checkThrowableMessage($throwable, $expectedMessage);
-			return $throwable;
+			return true;
 		}
 
 		self::failAssertingThrowable($expectedThrowableClass);
