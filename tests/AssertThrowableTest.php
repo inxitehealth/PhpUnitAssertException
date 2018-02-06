@@ -4,6 +4,7 @@ namespace VladaHejda;
 
 use Error;
 use Exception;
+use VladaHejda\Exceptions\NotException;
 use PHPUnit\Framework\TestCase;
 
 class AssertThrowableTest extends TestCase

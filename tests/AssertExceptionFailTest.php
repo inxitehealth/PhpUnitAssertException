@@ -3,6 +3,8 @@
 namespace VladaHejda;
 
 use Exception;
+use VladaHejda\Exceptions\MyException;
+use VladaHejda\Exceptions\MyExceptionSubclass;
 use PHPUnit\Framework\TestCase;
 
 class AssertExceptionFailTest extends TestCase
