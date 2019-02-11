@@ -146,7 +146,7 @@ trait AssertException
     private static function checkThrowableMessage(Throwable $throwable, string $expectedMessage = null) : void
     {
         if ($expectedMessage !== null) {
-            TestCase::assertContains($expectedMessage, $throwable->getMessage(), sprintf('Failed asserting the message of thrown %s.', get_class($throwable)));
+            TestCase::assertStringContainsString($expectedMessage, $throwable->getMessage(), sprintf('Failed asserting the message of thrown %s.', get_class($throwable)));
         }
     }
 
