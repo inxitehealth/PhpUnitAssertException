@@ -1,29 +1,29 @@
 {
-    "name": "vladahejda/phpunit-assert-exception",
-    "description": "Assert exception/throwable/error PHPUnit trait.",
-    "type": "library",
-    "keywords": [
-        "phpunit"
-    ],
-    "license": "BSD-3-Clause",
-    "authors": [
-        {
-            "name": "Vladislav Hejda",
-            "email": "jsem@hejdav.cz"
-        }
-    ],
-    "require": {
-        "php": "~7.1",
-        "phpunit/phpunit": "^7.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "VladaHejda\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests/"
-        }
+  "name": "vladahejda/phpunit-assert-exception",
+  "description": "Assert exception/throwable/error PHPUnit trait.",
+  "type": "library",
+  "keywords": [
+    "phpunit"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Vladislav Hejda",
+      "email": "jsem@hejdav.cz"
     }
+  ],
+  "require": {
+    "php": "~7.2",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "VladaHejda\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  }
 }
